@@ -1,0 +1,19 @@
+h1,h2,h3,h4,h5,h6,p,a,li,span,tr,td{
+  font-family: 微软雅黑;
+}
+article{
+  background: url('../assets/img/2.png');
+  background-size:100% ;
+}
+.paragraph p{
+  text-indent: 30px;
+}
+.paragraph .title{
+  font-weight: bold;
+  color: #373e40;
+  font-size: 16px;
+}
+table{
+  text-align: center;
+  margin: 10px 0;
+}

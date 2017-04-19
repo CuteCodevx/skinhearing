@@ -1,10 +1,89 @@
-<p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
 
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
+  <sd-navbar></sd-navbar>
+  <section>
+    <!-- Nav tabs -->
+    <ul class="carousel-indicators">
+      <li class="active" data-target="#home" aria-controls="home" data-toggle="tab"></li>
+      <li data-target="#profile" aria-controls="profile" role="tab" data-toggle="tab"></li>
+      <li data-target="#settings" aria-controls="settings" role="tab" data-toggle="tab"></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content row">
+      <div role="tabpanel" class="tab-pane active col-lg-7 col-md-7" id="home">
+        <h1>高性能皮肤听声器</h1>
+        <p>皮肤听声就是利用人体皮肤的感觉资源来代替人耳听觉系统，主要用于解决聋人的听觉难题。皮肤听声器属于第三类助听器。多学科融合的科学结晶，聋人问题终极解决方案，像电子耳蜗一样的效果，像助听器一样的方便。</p>
+        <a href="#" class="btn btn-primary">点击查看详情<span> > </span></a>
+      </div>
+      <div role="tabpanel" class="tab-pane  col-lg-7 col-md-7" id="profile">
+        <h1>第一代皮肤听声器</h1>
+        <p>高性能皮肤听声器汇集了人体解剖学、声学、数学、电子学等前沿科学技术，充分利用人体皮肤原有的感觉神经资源，在人体手臂皮肤上开辟了新的听觉通道，可作为聋人首选的助听工具。</p>
+        <a href="#" class="btn btn-primary">点击查看详情<span> > </span></a>
+      </div>
+      <div role="tabpanel" class="tab-pane  col-lg-7 col-md-7" id="settings">
+        <h1>第二代皮肤听声器</h1>
+        <p>2013年10月研制成功第二代皮肤听声器，称为高性能皮肤听声器。特点：扎臂式、12通道滤波，阵列电极、自动音量调节、拟合感觉曲线。高性能皮肤听声器能使聋人分辨语音。</p>
+        <a href="#" class="btn btn-primary">点击查看详情<span> > </span></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="media col-lg-3 col-md-4 col-sm-6">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src='../assets/img/book2.png' alt="">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">1500+</h4>
+            <p>关于皮肤听声的相关理论和参考资料查阅</p>
+            <a href="#">详情 >></a>
+          </div>
+        </div>
+        <div class="media col-lg-3 col-md-4 col-sm-6">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src='../assets/img/home-03.png' alt="">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">3</h4>
+            <p>下载高性能皮肤听声器语音训练系统及使用说明书</p>
+            <a href="#">详情 >></a>
+          </div>
+        </div>
+        <div class="media col-lg-3 col-md-4 col-sm-6">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src='../assets/img/member.png' alt="">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">发明者</h4>
+            <p>李建文，1982年毕业于西北大学数学系，理学学士</p>
+            <a href="#">详情 >></a>
+          </div>
+        </div>
+        <div class="media col-lg-3 col-md-4 col-sm-6">
+          <div class="media-left">
+            <div class="thumbnail">
+              <a href="#">
+                <img class="media-object" src='../assets/img/home-001.png' alt="" id="pic">
+              </a>
+              <div class="caption">
+                <a class="btn btn-primary">立即咨询</a>
+              </div>
+            </div>
 
-<ul>
-  <li *ngFor="let name of names">{{name}}</li>
-</ul>
+          </div>
+          <div class="media-body">
+            <h4>疑难解答</h4>
+            <p>高性能皮肤听声器的适合在什么情况下使用？与传统助听器相比，它特点和优势是什么？</p>
+            <p> --这里有专业的开发人员为您解答</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <sd-footer></sd-footer>
+

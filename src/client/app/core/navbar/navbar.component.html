@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+        <img src="../../assets/img/logoo.png" alt="Brand" class="img-responsive">
+      </a>
+      <p class="navbar-text">皮肤听声专题网</p>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav class="nav navbar-nav">
+        <a [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">首页</a>
+        <a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">相关理论</a>
+        <a [routerLink]="['/product']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">产品介绍</a>
+        <a [routerLink]="['/userecord']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">使用记录</a>
+        <a [routerLink]="['/download']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">相关下载</a>
+        <a [routerLink]="['/contact']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">联系我们</a>
+      </nav>
+      <nav class="nav navbar-nav navbar-right">
+        <a [routerLink]="['/inventor']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">发明者</a><i class="glyphicon glyphicon-user"></i>
+        <a href="#">注册</a>
+        <a href="#">登录</a>
+        <a href="#">注销</a>
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">中文 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">EN</a></li>
+            <li><a href="#">繁体</a></li>
+          </ul>
+        </a>
+      </nav>
+    </div>
+  </div>
+</nav>
+<!--<nav class="nav navbar-nav">-->
+  <!--<a [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">首页</a>-->
+  <!--<a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">帮助</a>-->
+
+
+<!--</nav>-->

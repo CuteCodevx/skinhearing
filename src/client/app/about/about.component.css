@@ -1,12 +1,29 @@
-:host {
-  display: block;
-  padding: 0 16px;
+
+h1,h2,h3,h4,h5,h6,p,a,li,span{
+  font-family: 微软雅黑;
 }
 
-h2 {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.005em;
-  margin-bottom: 0;
-  margin-top: 0.83em;
+article{
+  background: url('../assets/img/bgimg1.png');
+  background-size: 100%;
+}
+section h1 span{
+  color: #8b0000;
+}
+
+.row{
+  margin: 10px 0;
+}
+.thumbnail{
+  border-width:0 0 2px 0;
+  background: rgba(172,238,238,0.8);
+  border-color: #afeeee
+}
+
+.caption h3{
+  text-align: center;
+  color:#373e40;
+}
+.caption p a{
+  color: #373e40;
 }
