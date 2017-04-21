@@ -13,10 +13,11 @@ import { ContactModule } from './contact/contact.module';
 import { DownloadModule } from './download/download.modules';
 import { UserecordModule } from './userecord/userecord.module';
 import { ProductModule } from './product/product.module';
-import { InventorModule } from './inventor/inventor.module'
+import { InventorModule } from './inventor/inventor.module';
+import {UserModule} from './user/user.module';
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, AppRoutingModule, AboutModule, HomeModule,CoreModule, SharedModule,ContactModule,DownloadModule,UserecordModule,ProductModule,InventorModule],
+  imports: [BrowserModule, HttpModule, AppRoutingModule, AboutModule, HomeModule,CoreModule, SharedModule,ContactModule,DownloadModule,UserecordModule,ProductModule,InventorModule,UserModule],
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,

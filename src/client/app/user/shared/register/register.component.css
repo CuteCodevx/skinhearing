@@ -1,0 +1,13 @@
+h1,h2,h3,h4,h5,h6,p,a,li,span{
+  font-family: 微软雅黑;
+}
+
+section{
+  background: url('../assets/img/login.jpg');
+  background-size:100% ;
+}
+.logincenter{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
