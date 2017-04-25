@@ -24,7 +24,8 @@ export class RegisterService{
         value: '',
         required: true,
         pattern: 'username',
-        order: 1
+        order: 1,
+        icon:'glyphicon glyphicon-user'
       }),
       new FieldText({
         key: 'password',
@@ -33,7 +34,8 @@ export class RegisterService{
         value: '',
         required: true,
         pattern: 'password',
-        order: 2
+        order: 2,
+        icon:'glyphicon glyphicon-lock'
       }),
     ];
     return fields.sort((a, b) => a.order - b.order);

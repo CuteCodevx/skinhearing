@@ -7,11 +7,11 @@ section{
   background: url('../assets/img/bgimg7.jpg');
   background-size:100% ;
 }
-.carousel-indicators{
-  position: absolute;
-  left: 11%;
-  top:43%;
-}
+/*.carousel-indicators{*/
+  /*position: absolute;*/
+  /*left: 11%;*/
+  /*top:43%;*/
+/*}*/
 .carousel-indicators li{
   color:#c5c5c5;
   background: #c5c5c5;
@@ -50,7 +50,7 @@ section .tab-pane .btn-primary span{
   background: #00b3bc;
 }
 .media p,.media .media-body a{
-  font-size: 12px;
+  font-size: 14px;
   color: #373e40;
 }
 

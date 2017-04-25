@@ -1,0 +1,22 @@
+.row{
+  margin-top: 20px;
+}
+.col-sm-2{
+  margin-top:10px ;
+}
+.col-sm-4{
+  margin-top:10px ;
+}
+.col-sm-6{
+  padding: 0;
+}
+.input-group-addon{
+  border: none;
+  background: rgba(0,25,0,0);
+}
+.form-control{
+  background: rgba(250,240,230,0.5);
+}
+p{
+  color: rgba(139,0,0,1);
+}

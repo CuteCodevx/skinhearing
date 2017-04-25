@@ -5,6 +5,7 @@ export class FieldBase<T>{
   value:T;
   key:string;
   label:string;
+  icon:string;
   required:boolean;
   pattern:string;
   order:number;
@@ -14,6 +15,7 @@ export class FieldBase<T>{
                 key?: string,
                 label?: string,
                 required?: boolean,
+                icon?:string,
                 pattern?: string,
                 order?: number,
                 controlType?: string
@@ -25,5 +27,6 @@ export class FieldBase<T>{
     this.pattern = options.pattern || '';
     this.order = options.order === undefined ? 1 : options.order;
     this.controlType = options.controlType || '';
+    this.icon=options.icon || '';
   }
 }

@@ -1,7 +1,11 @@
-<div [formGroup]="form">
-  <label [attr.for]="field.key">{{field.label}}</label>
-  <div [ngSwitch]="field.controlType">
-    <input *ngSwitchCase="'text'" [formControlName]="field.key" [id]="field.key" [type]="field.type" />
+<div [formGroup]="form"  class="row">
+  <label [attr.for]="field.key" class="col-sm-2">{{field.label}}</label>
+  <div [ngSwitch]="field.controlType" class="col-sm-6">
+    <div class="input-group">
+      <span class="input-group-addon"><i [class]="field.icon"></i></span>
+      <input *ngSwitchCase="'text'" [formControlName]="field.key" [id]="field.key" [type]="field.type" class="form-control"/>
+
+    </div>
 
     <!--<div *ngSwitchCase="'radio'" class="radio-row">-->
       <!--<label *ngFor="let item of field.items">-->
@@ -14,12 +18,13 @@
     <!--<select [id]="field.key" *ngSwitchCase="'select'" [formControlName]="field.key">-->
       <!--<option *ngFor="let opt of field.options"  [value]="opt.key">{{opt.value}}</option>-->
     <!--</select>-->
+
   </div>
 
-
-  <div class="errorMessage" *ngIf="!isEmpty && !isValid">{{field.label}}
+  <p class="errorMessage col-sm-4" *ngIf="!isEmpty && !isValid">{{field.label}}
     格式不正确
-  </div>
-  <div class="tipsMessage" *ngIf="isEmpty">请填写{{field.label}}</div>
+  </p>
+  <p class="tipsMessage col-sm-4" *ngIf="isEmpty">请填写{{field.label}}</p>
+
 
 </div>

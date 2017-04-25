@@ -2,12 +2,22 @@ h1,h2,h3,h4,h5,h6,p,a,li,span{
   font-family: 微软雅黑;
 }
 
-section{
-  background: url('../assets/img/login.jpg');
-  background-size:100% ;
+.loginstyle{
+  text-align: center;
+  background: url('../assets/img/bglogin.jpg');
+  background-size: 100%;
+  border-radius: 10px;
 }
-.logincenter{
-  display: flex;
-  justify-content: center;
-  align-content: center;
+a{
+  color: 	#8A2BE2;
+}
+.input-group-addon{
+  border: none;
+  background: rgba(0,25,0,0);
+}
+.form-checkbox{
+  margin: 20px 0 10px 0;
+}
+#showPassword{
+  height:15px;
 }

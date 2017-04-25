@@ -1,0 +1,26 @@
+section{
+  background: rgba(200,238,238,0.8);
+  border-color: #afeeee
+}
+.row{
+  margin: 10px 0;
+}
+.paragraph{
+  color: #373e40;
+}
+ul{
+  list-style: none;
+}
+.paragraph p,ul{
+  text-indent: 30px;
+}
+.paragraph .title{
+  font-weight: bold;
+  color: #6E8B3D;
+  font-size: 16px;
+}
+.paragraph p span{
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
