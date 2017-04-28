@@ -49,30 +49,30 @@ export class RegisterComponent implements OnInit{
   resetForm(){
     this.form.reset();
   }
-
   register(){
-    // this.http.post('/api/user/add',{
-    //   username:this.username,
-    //   password:this.password
-    // });
     //提交注册信息  subscribe()方法的第二个参数来处理错误信息
     this.rs.addUser(this.form.value).subscribe((res:Response) => {
       //json()方法把服务器返回的数据转换成JSON对象
       let body=res.json();
       this.registered=true;
       new Observable((observer:Observer<any>)=>{
-        this.alert.msg=body.message || '注册成功';
-        this.alert.type=body.success?'success':'danger';
+        this.alert.msg= body.message || '注册成功';
+        this.alert.type=body.success ? "success" : "danger";
         this.registered=true;
         observer.next(true);
-      }).subscribe(data => {  //操作提示，2秒后跳转到首页
-        if(body.success){
-          this.us.isLogin=true;
-          this.router.navigate(['']); //跳到首页
-          this.us.userInfo = { username: this.form.value.username,createDate:new Date().toLocaleString()}  // 缓存用户信息，显示在导航栏上
-        }
-        this.registered=false;
+      }).subscribe(data => {  //操作提示，1.5秒后跳转到首页 有.subscribe()函数，bosy.seccess,this.alert.type,this.alert.mag值正确，没有的话会出错(注册过的用户名还会注册成功)
+        var This=this;
+        setTimeout(function () {
+          if(body.success){
+            This.us.isLogin=true;
+            This.router.navigate(['']); //跳到首页
+            This.us.userInfo = { username: This.form.value.username,createDate:new Date().toLocaleString()}  // 缓存用户信息，显示在导航栏上
+          }
+          This.registered=false;
+        },1500);
+
       });
+
     },error=>{
       console.error(error);
     });

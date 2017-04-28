@@ -53,12 +53,12 @@ export class RegisterService{
     });
     return new FormGroup(group);
   }
-  addUser(data : Object):Observable<Object>{
+  addUser(data: Object) {
     let body = JSON.stringify(data);
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
 
     return this.http
-      .post(SITE_HOST_URL + 'user/add', body, { headers });
+      .post(this.registerUrl, body, { headers });
   }
 }

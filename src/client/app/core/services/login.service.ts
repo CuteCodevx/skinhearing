@@ -56,20 +56,27 @@ export class LoginService {
     return new FormGroup(group);
   }
 
-  login(data: Object) {
+  /*login(data: Object) {
+   let body = JSON.stringify(data);
+   let headers = new Headers();
+   headers.append('Content-Type', 'application/json');
+   return new Observable((observer: Observer<any>) => {
+   this.http.post(this.loginUrl, body, {headers}).subscribe(res => {
+   let body = res.json();
+   if (body && body.success) {
+   // this.userService.isLogin = true;
+   // this.userService.userName = data['username'];
+   observer.next(res);
+   observer.complete();
+   }
+   });
+   });
+   }*/
+  login(data: Object){
     let body = JSON.stringify(data);
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return new Observable((observer: Observer<any>) => {
-      this.http.post(this.loginUrl, body, {headers}).subscribe(res => {
-        let body = res.json();
-        if (body && body.success) {
-          // this.userService.isLogin = true;
-          // this.userService.userName = data['username'];
-          observer.next(res);
-          observer.complete();
-        }
-      });
-    });
+    return this.http
+      .post(this.loginUrl, body, {headers});
   }
 }

@@ -1,5 +1,5 @@
+ <sd-navbar></sd-navbar>
 
-  <sd-navbar></sd-navbar>
   <section>
     <!-- Nav tabs -->
     <ul class="carousel-indicators">
@@ -25,7 +25,16 @@
         <a href="#" class="btn btn-primary">点击查看详情<span> > </span></a>
       </div>
     </div>
+
     <div class="container">
+      <div class="row">
+        <div *ngIf="btn" class="panel panel-default col-md-offset-4 panelstyle">
+          <div class="panel-body">
+            {{content}}
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="media col-lg-3 col-md-4 col-sm-6">
           <div class="media-left">
@@ -70,7 +79,7 @@
                 <img class="media-object" src='../assets/img/home-001.png' alt="" id="pic">
               </a>
               <div class="caption">
-                <a class="btn btn-primary">立即咨询</a>
+                <a class="btn btn-primary" (click)="click()">立即咨询</a>
               </div>
             </div>
 

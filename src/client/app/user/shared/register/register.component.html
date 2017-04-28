@@ -19,10 +19,14 @@
       </form>
       <a [routerLink]="['/login']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">已有账号，请点击登录 >> </a>
     </div>
-    <div *ngIf="registered">
-      <!--<alert>-->
-      都注册过了
-      <!--</alert>-->
+
+    <div *ngIf="registered" class="col-md-6 col-md-offset-3">
+      <alert [type]="alert.type" dismissible="true">
+        <div *ngIf="alert.type == 'success' ">
+
+        </div>
+        {{alert?.msg}}
+      </alert>
     </div>
 
   </div>

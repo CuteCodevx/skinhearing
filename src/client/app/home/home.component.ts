@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NameListService } from '../shared/index';
 
 /**
  * This class represents the lazy loaded HomeComponent.
@@ -11,7 +10,13 @@ import { NameListService } from '../shared/index';
   styleUrls: ['home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  //
+  content:string='请加入皮肤听声交流群：373515541';
+  btn:boolean=false;
+  click(){
+    this.btn=!this.btn;
+    return this.btn;
+  }
+
   // newName: string = '';
   // errorMessage: string;
   // names: any[] = [];
@@ -27,9 +32,9 @@ export class HomeComponent implements OnInit {
   // /**
   //  * Get the names OnInit
   //  */
-  // ngOnInit() {
+  ngOnInit() {
   //   this.getNames();
-  // }
+  }
   //
   // /**
   //  * Handle the nameListService observable
