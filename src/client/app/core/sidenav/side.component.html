@@ -1,0 +1,5 @@
+<div class="navbar box" id="">
+  <div class="nav navbar-nav nav-stacked">
+    <a *ngFor="let item of items;let p = index" [id]="'sidenav'+p" (mouseenter)="movein(p)" (mouseleave)="moveout(p)" data-toggle="tooltip" data-placement="right" [title]="item.title" [routerLink]='[item.address]' [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"></a>
+  </div>
+</div>

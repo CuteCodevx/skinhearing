@@ -4,10 +4,11 @@ import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { CoreModule } from '../core/core.module';
+import {VideoComponent} from "./video/video.component";
 @NgModule({
   imports: [CommonModule, HomeRoutingModule, CoreModule,SharedModule],
-  declarations: [HomeComponent],
-  exports: [HomeComponent],
+  declarations: [HomeComponent,VideoComponent],
+  exports: [HomeComponent,VideoComponent],
   providers: []
 })
 export class HomeModule { }

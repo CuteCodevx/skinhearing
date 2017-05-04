@@ -1,8 +1,4 @@
-
 <sd-navbar></sd-navbar>
-<article>
-
-
 <section class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -17,12 +13,20 @@
     </div>
   </div>
   <div class="row">
+    <div *ngIf="btn" class="panel panel-default col-md-offset-4 panelstyle">
+      <div class="panel-body">
+        {{content}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
     <p class="col-sm-1 col-sm-offset-4">
-      <a href="#" class="imgstyleC"></a>
-      <a href="#">联系我们</a></p>
+      <a [routerLink]="['/contact']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}" class="imgstyleC"></a>
+      <a [routerLink]="['/contact']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">联系我们</a>
+    </p>
     <p class="col-sm-1 col-sm-offset-1">
-      <a href="#" class="imgstyle"></a>
-      <a href="#">加入我们</a>
+      <a class="imgstyle" (click)="click()"></a>
+      <a (click)="click()">加入我们</a>
     </p>
   </div>
 
@@ -38,9 +42,8 @@
 
 
 </section>
-</article>
 <div class="imgbg">
-  <img src="../assets/img/contact/map.jpg" alt="" class="img-responsive">
+  <!--<img src="../assets/img/contact/map.jpg" alt="" class="img-responsive">-->
   <i class="glyphicon glyphicon-map-marker"data-toggle="tooltip" data-placement="right" title="地址：陕西省西安市未央区大学园区陕西科技大学实验楼2A-307"></i>
 </div>
 <sd-footer></sd-footer>

@@ -1,14 +1,13 @@
  <sd-navbar></sd-navbar>
-
   <section>
     <!-- Nav tabs -->
-    <ul class="carousel-indicators">
-      <li class="active" data-target="#home" aria-controls="home" data-toggle="tab"></li>
-      <li data-target="#profile" aria-controls="profile" role="tab" data-toggle="tab"></li>
-      <li data-target="#settings" aria-controls="settings" role="tab" data-toggle="tab"></li>
-    </ul>
+    <!--<ul class="carousel-indicators">-->
+      <!--<li class="active" data-target="#home" aria-controls="home" data-toggle="tab"></li>-->
+      <!--<li data-target="#profile" aria-controls="profile" role="tab" data-toggle="tab"></li>-->
+      <!--<li data-target="#settings" aria-controls="settings" role="tab" data-toggle="tab"></li>-->
+    <!--</ul>-->
     <!-- Tab panes -->
-    <div class="tab-content row">
+    <div class="tab-content">
       <div role="tabpanel" class="tab-pane active col-lg-7 col-md-7" id="home">
         <h1>高性能皮肤听声器</h1>
         <p>皮肤听声就是利用人体皮肤的感觉资源来代替人耳听觉系统，主要用于解决聋人的听觉难题。皮肤听声器属于第三类助听器。多学科融合的科学结晶，聋人问题终极解决方案，像电子耳蜗一样的效果，像助听器一样的方便。</p>
@@ -25,7 +24,24 @@
         <a href="#" class="btn btn-primary">点击查看详情<span> > </span></a>
       </div>
     </div>
-
+    <div class="wrap" id="wrap">
+      <div [class]="iconstyle" [id]="i" (click)="turn(i)" *ngFor="let _html of data;let i =index">
+        <div class="photo-wrap">
+          <div class="side side-front">
+            <p class="image">
+              <img [src]=" '../assets/img/'+_html.img" alt="">
+            </p>
+            <p class="caption">{{_html.title}}</p>
+          </div>
+          <div class="side side-back">
+            <p class="desc">{{_html.desc}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <span [id]="'nav'+k" (click)="turn(k)" class="i" *ngFor="let _html of data;let k =index">&nbsp;</span>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
         <div *ngIf="btn" class="panel panel-default col-md-offset-4 panelstyle">
@@ -34,7 +50,6 @@
           </div>
         </div>
       </div>
-
       <div class="row">
         <div class="media col-lg-3 col-md-4 col-sm-6">
           <div class="media-left">
@@ -67,7 +82,7 @@
             </a>
           </div>
           <div class="media-body">
-            <h4 class="media-heading">发明者</h4>
+            <h4 class="media-heading"><span *ngIf="!isEN">发明者</span><span *ngIf="isEN">Inventor</span></h4>
             <p>李建文，1982年毕业于西北大学数学系，理学学士</p>
             <a [routerLink]="['/inventor']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">详情 >> </a>
           </div>
@@ -92,7 +107,9 @@
         </div>
       </div>
     </div>
+    <router-outlet></router-outlet>
   </section>
 
+  <!--<sd-video></sd-video>-->
   <sd-footer></sd-footer>
 

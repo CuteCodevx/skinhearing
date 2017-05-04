@@ -14,9 +14,8 @@ h1,h5,h2,h3,h4,h6,a,p,span{
 }
 .navbar-default .navbar-text{
   height: 60px;
-  padding-right: 20px;
-  font: 26px/60px '微软雅黑';
-  border-right: 1px solid #373e40;
+  padding-right: 10px;
+  font: 24px/60px '微软雅黑';
   color:#373e40;
 }
 .navbar-default .navbar-nav{
@@ -25,9 +24,9 @@ h1,h5,h2,h3,h4,h6,a,p,span{
 .navbar-default .navbar-nav a{
    display: inline-block;
    height: 30px;
-   margin:0 5px;
-   padding: 0 5px;
-   font: 16px/30px '微软雅黑';
+   margin:0 3px;
+   padding: 0 3px;
+   font: 14px/30px '微软雅黑';
    color:#373e40;
  }
 .navbar-default .navbar-right a{

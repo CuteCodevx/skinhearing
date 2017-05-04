@@ -2,24 +2,45 @@ h1,h5,h2,h3,h4,h6,a,p,span{
   font-family: "微软雅黑";
 }
 footer{
-  text-align: center;
-  font-size: 12px;
-  padding: 30px 0;
   color:#373e40;
   /*background:#a2b4ba;*/
   background: url('../assets/img/banner1.png');
   background-size:100% ;
+  z-index: 100;
+  padding-top:30px;
 }
-footer a{
+
+section h4{
+  text-indent: 20px;
+}
+.row{
+  padding: 10px 0 20px 0;
+}
+.row i{
+  /*font-size: 30px;*/
+  line-height: 30px;
+  transform: scale(1.8);
+  color: #3071a9;
+}
+.row span{
+  font-size: 16px;
+  /*line-height: 30px;*/
+  margin-left: 20px;
+}
+article{
+  text-align: center;
+  font-size: 12px;
+  background: rgba(142,229,238,0.5);
+  padding: 15px 0;
+}
+article a{
   display: inline-block;
-  margin:0px 0 10px 0 ;
+  margin:5px 0 10px 0 ;
   padding:0 10px;
   border-right: 1px solid #373e40;
   color:#373e40;
 }
-footer p{
-  margin-top: 5px;
+article p{
+  margin: 0px;
 }
-footer p span{
-  margin-left: 20px;
-}
+

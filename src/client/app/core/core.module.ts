@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 // import { DropdownModule } from 'ng2-bootstrap/dropdown';
 import { NavbarComponent } from './navbar/index';
 import { FooterComponent } from './footer/index';
+import { SidenavComponent } from './sidenav/index';
 import {RegisterService} from './services/register.service';
 import {UserService} from './services/user.service';
 import {LoginService} from './services/login.service';
@@ -17,8 +18,8 @@ import {LoginService} from './services/login.service';
 @NgModule({
   imports: [CommonModule, RouterModule],
   providers:[RegisterService,UserService,LoginService],
-  declarations: [ NavbarComponent,FooterComponent],
-  exports: [ NavbarComponent,FooterComponent,
+  declarations: [ NavbarComponent,FooterComponent,SidenavComponent],
+  exports: [ NavbarComponent,FooterComponent,SidenavComponent,
     CommonModule, FormsModule, RouterModule]
 })
 export class CoreModule {

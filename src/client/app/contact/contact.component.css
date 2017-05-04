@@ -2,7 +2,11 @@
 h1,h2,h3,h4,h5,h6,p,a,li,span{
   font-family: 微软雅黑;
 }
-article{
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+section{
   background: url('../assets/img/contact/bgimg3.jpg');
   background-size:100% ;
 }
@@ -11,22 +15,24 @@ section h1 span{
 }
 .imgbg {
   background: #fff;
-  /*box-shadow:0 0 10px 10px #00BFFF ;*/
+  height:900px;
   margin: 1% 0;
   padding: 1% 0;
   box-shadow: 0 0 10px 10px #fff;
   position: relative;
+  background: url("../assets/img/contact/map.jpg") no-repeat;
 }
-.imgbg img{
-  margin: 0 auto;
-}
+/*.imgbg img{*/
+  /*margin: 0 auto;*/
+/*}*/
 .imgbg i{
   position: absolute;
   font-size: 20px;
-  left:56%;
+  left:745px;
   top:50%;
   color: #FFEC8B;
   cursor: pointer;
+  display: inline;
 }
 .row{
   margin: 10px 0;
@@ -45,13 +51,20 @@ section h1 span{
   width:55px;
   height:55px;
   background:url("../assets/img/contact/icon-people.png");
+  transition: .5s;
 }
 .imgstyle:hover{
-  background: url('../assets/img/contact/icon-people1.png');
+  transform: scale(1.1);
 }
 .imgstyleC{
   display: inline-block;
   width:55px;
   height:55px;
   background:url("../assets/img/contact/icon-phone.png");
+}
+
+.panelstyle{
+  position: absolute;
+
+  z-index: 5;
 }

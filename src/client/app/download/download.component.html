@@ -1,37 +1,44 @@
 <sd-navbar></sd-navbar>
-<article>
-<section class="container">
-  <div class="row">
-    <div class="col-sm-5">
-      <h1>相关资料下载 <span>download</span> </h1>
-      <h4>下载高性能皮肤听声器的相关文献</h4>
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <h1>相关资料下载 <span>download</span> </h1>
+        <h4>下载高性能皮肤听声器的相关文献</h4>
+      </div>
+      <div class="col-sm-2 col-md-offset-3">
+        <img src="../assets/img/download/download.png" alt="" class="img-responsive">
+      </div>
+      <div class="col-sm-2">
+        <img src="../assets/img/download/download-book.png" alt="">
+      </div>
     </div>
-    <div class="col-sm-2 col-md-offset-3">
-      <img src="../assets/img/download/download.png" alt="" class="img-responsive">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="row">
+          <h3>高性能皮肤听声器语音训练系统</h3>
+          <p>用来训练聋人分辨汉语语音和发声的计算机软件系统</p>
+          <a href="../assets/img/download/doc/training.zip">下载</a>
+        </div>
+        <div class="row">
+          <h3>高性能皮肤听声器宣传页</h3>
+          <p>展示高性能皮肤听声器基本优点的宣传页</p>
+          <a [routerLink]="['/download/pageimg']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">在线浏览</a>
+          <a href="../assets/img/download/doc/高性能皮肤听声器宣传页.zip">下载</a>
+        </div>
+        <div class="row">
+          <h3>高性能皮肤听声器使用说明书</h3>
+          <p>关于高性能皮肤听声器如何使用的pdf文件</p>
+          <a [routerLink]="['/download/doc']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">在线浏览</a>
+          <a href="../assets/img/download/doc/高性能皮肤听声器说明书.zip">下载</a>
+        </div>
+        <div class="row">
+          <h3>国家自然科学基金项目批准通知书</h3>
+          <a href="../assets/img/download/doc/doc.zip">下载</a>
+        </div>
+      </div>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
     </div>
-    <div class="col-sm-2">
-      <img src="../assets/img/download/download-book.png" alt="">
-    </div>
-  </div>
-  <div class="row">
-    <h3><a href="#">高性能皮肤听声器语音训练系统</a></h3>
-    <p>用来训练聋人分辨汉语语音和发声的计算机软件系统</p>
-    <a href="../assets/img/download/doc/training.zip">下载</a>
-  </div>
-  <div class="row">
-    <h3><a href="#">高性能皮肤听声器宣传页</a></h3>
-    <p>展示高性能皮肤听声器基本优点的宣传页</p>
-    <a href="../assets/img/download/doc/高性能皮肤听声器宣传页.JPG">在线浏览</a>
-    <a href="../assets/img/download/doc/高性能皮肤听声器宣传页.zip">下载</a>
-  </div>
-  <div class="row">
-    <h3><a href="#">高性能皮肤听声器使用说明书</a></h3>
-    <p>关于高性能皮肤听声器如何使用的pdf文件</p>
-    <a href="../assets/img/download/doc/高性能皮肤听声器说明书.pdf">在线浏览</a>
-    <a href="../assets/img/download/doc/高性能皮肤听声器说明书.zip">下载</a>
-  </div>
-
-
-</section>
-</article>
+  </section>
 <sd-footer></sd-footer>

@@ -7,11 +7,13 @@ import { DownloadComponent } from './download.component';
 import { DownloadRoutingModule } from './download.routing-modules';
 import { CoreModule } from '../core/core.module';
 import {AuthGuard} from '../core/services/auth-guard.service';
+import {DocComponent} from "./downloaddoc/doc.component";
+import {PageimgComponent} from "./downloaddoc/pageimg.component";
 
 @NgModule({
   imports: [CommonModule, DownloadRoutingModule,CoreModule],
-  declarations: [DownloadComponent],
+  declarations: [DownloadComponent,DocComponent,PageimgComponent],
   providers:[AuthGuard],
-  exports: [DownloadComponent]
+  exports: [DownloadComponent,DocComponent,PageimgComponent]
 })
 export class DownloadModule { }

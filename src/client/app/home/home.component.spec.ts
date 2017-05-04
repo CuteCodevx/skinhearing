@@ -12,7 +12,6 @@ import {
 } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 
-import { NameListService } from '../shared/index';
 import { HomeModule } from './home.module';
 
 export function main() {

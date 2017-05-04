@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule,Routes} from '@angular/router';
+import { RouterModule,Routes,Route} from '@angular/router';
 import { AboutComponent } from './about.component';
 
 import {Article1Routes} from './article/index';
@@ -36,5 +36,5 @@ const routes:Routes=[
 //   ],
 //   exports: [RouterModule]
 // })
-export class AboutRoutingModule { }
+export class AboutRoutingModule{}
 

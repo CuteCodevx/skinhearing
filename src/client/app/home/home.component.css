@@ -5,6 +5,7 @@ section{
   position: relative;
   background: url('../assets/img/bgimg7.jpg');
   background-size:100% ;
+  z-index: 2;
 }
 /*.carousel-indicators{*/
 /*position: absolute;*/
@@ -72,3 +73,159 @@ section .tab-pane .btn-primary span{
 
   z-index: 5;
 }
+.container{
+  padding: 30px 0 0 0;
+}
+/*图片墙的样式*/
+.wrap{
+  width: 100%;
+  height: 600px;
+  /*position: absolute;*/
+  /*top:50%;*/
+  margin-bottom: 20px;
+  /*background-color: palegreen;*/
+  overflow: hidden;
+  perspective: 800px;
+  -webkit-perspective: 800px;
+}
+.photo{
+  width:260px;
+  height: 320px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 1px rgba(0,0,0,0.01);
+  -webkit-transition: all .5s;
+}
+.photo .side{
+  width: 100%;
+  height:100%;
+  background-color: #fff;
+  position: absolute;
+  top:0;
+  right:0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.photo .side-front .image{
+  width: 100%;
+  height: 250px;
+  line-height: 250px;
+  overflow: hidden;
+  margin: 0;
+}
+.photo .side-front .image img{
+  width:100%;
+}
+.photo .side-front .caption{
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+
+.photo .side-back .desc{
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.photo_center{
+  left: 50%;
+  top:50%;
+  margin:-160px 0 0 -130px;
+  z-index: 999;
+}
+.photo-wrap{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+}
+.photo-wrap .side-front{
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+.photo-wrap .side-back{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.photo-wrap .side{
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /**/
+}
+.photo_front .photo-wrap{
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+.photo_back .photo-wrap{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+@font-face {
+  font-family: "icons";
+  src:url('../fonts/icons/turn-arrow.svg') format('svg');
+  unicode-range:U+0-10FFFF;
+}
+.nav{
+  width: 80%;
+  height:30px;
+  line-height: 30px;
+  position: absolute;
+  left: 10%;
+  bottom: 20px;
+  z-index: 999;
+  /*background-color: #fff;*/
+  text-align: center;
+}
+.nav .i{
+  width:30px;
+  height:30px;
+  display: inline-block;
+  cursor: pointer;
+  background-color:#aaa;
+  text-align: center;
+  border-radius:50%;
+  -webkit-transform: scale(.5);
+  -webkit-transition: all .5s;
+}
+.nav .i:after{
+  content:'\21B7';
+  font-family: 'icons';
+  color: #fff;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  opacity: 0;
+}
+.nav .i_current{
+  -webkit-transform: scale(1);
+}
+.nav .i_current:after{
+  opacity: 1;
+}
+.nav .i_back{
+  -webkit-transform: rotateY(-180deg);
+  background-color: #555;
+  /*-webkit-backface-visibility: hidden;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
