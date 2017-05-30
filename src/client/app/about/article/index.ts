@@ -13,3 +13,5 @@ export * from './article5.component';
 export * from './article5.routing.module';
 export * from './article6.component';
 export * from './article6.routing.module';
+export * from './article0.component';
+export * from './article0.routing.modules';

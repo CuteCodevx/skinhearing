@@ -3,87 +3,122 @@ h1,h2,h3,h4,h5,h6,p,a,li,span{
 }
 section{
   position: relative;
-  background: url('../assets/img/bgimg7.jpg');
-  background-size:100% ;
+  /*background: url('../assets/img/bgimg7.jpg');*/
+  /*background-size:100% ;*/
   z-index: 2;
 }
-/*.carousel-indicators{*/
-/*position: absolute;*/
-/*left: 11%;*/
-/*top:43%;*/
-/*}*/
-.carousel-indicators li{
-  color:#c5c5c5;
-  background: #c5c5c5;
-  opacity: 0.5;
-
-}
-
-.carousel-indicators .active{
-  color:#00b3bc;
-  background: #00b3bc;
-  opacity: 1;
-  box-shadow: 0 0 1px 1px #00b3bc;
-}
-section .tab-pane{
-  padding: 10px 10%;
-  margin-bottom: 5%;
-}
-section .tab-pane p{
-  padding: 20px 0;
-  margin: 0;
-  font-size: 14px;
-}
-section .tab-pane .btn-primary{
-  background: #00b3bc;
-}
-section .tab-pane .btn-primary span{
-  color: #f5f5f5;
-}
 
 
-.media{
-  margin: 0px;
-}
-.media .btn-primary{
-  margin-bottom: 5px;
-  background: #00b3bc;
-}
-.media p,.media .media-body a{
-  font-size: 14px;
-  color: #373e40;
-}
-
-
-#pic{
-  padding: 5px;
-}
-.thumbnail{
-  background: rgba(0,0,0,0);
-  box-shadow: 1px 1px 2px 2px #a2b4ba;
+.container-fluid{
+  padding: 90px 0;
   text-align: center;
+  background-color: #f2f2f2;
+  /*margin-bottom: 30px;*/
+}
+.container-fluid span{
+  color:#333333;
+  font-size: 40px;
+  font-weight: bold;
+}
+.container-fluid h1{
+  font-size: 36px;
+  color: #333;
+}
+.container-fluid a{
+  display: block;
+  font-size: 22px;
+}
+.container-fluid img{
+  margin: 0 auto;
+}
+.container-fluid p{
+  width: 70%;
+  margin: 10px auto;
+  line-height: 35px;
+}
+.divide{
+  display: flex;
+  justify-content: space-around;
+}
+.left,.right{
+  width:49%;
+  margin:30px 0;
+}
+
+.left span,.right span{
+  font-size: 32px;
+  font-weight: 200;
+}
+.left h1,.right h1{
+  font-size: 28px;
+  font-weight: 200;
+}
+.style{
+  background-color: #fff;
+  padding: 30px 0;
+  position: relative;
+  top:-20px;
+}
+.oldpeople{
   padding: 0;
+  /*height: 800px;*/
+  /*background: url("../assets/img/128678.jpg");*/
+  /*background-size: 100%;*/
+  position: relative;
+  margin: 20px 0;
 }
-.thumbnail .caption{
-  background:#00b3bc;
+.oldpeople img{
+  margin:0 auto;
 }
-
-.panelstyle{
+.oldpeople .textwrap{
   position: absolute;
+  left:13%;
+  top:20%;
+  text-align: center;
+  color:#8B4726;
+}
+.oldpeople h2{
+  font-weight: 400;
+  font-size:36px;
+}
+.oldpeople p{
+  margin: 30px 0;
+}
+.oldpeople a{
+  color:#8B4726;
+  font-size: 16px;
 
-  z-index: 5;
 }
-.container{
-  padding: 30px 0 0 0;
+.textwrapleft,.textwrapright{
+  width:49%;
+  /*padding: 10px 20px;*/
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+.textwrapleft{
+  padding-left: 163px;
+}
+.textwrapright{
+  padding-right: 163px;
+}
+.textwrapleft img,.textwrapright img{
+  margin: 0 auto;
+}
+.textwrapleft a,.textwrapright a{
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
 /*图片墙的样式*/
 .wrap{
   width: 100%;
-  height: 600px;
-  /*position: absolute;*/
+  height: 800px;
+  position: relative;
   /*top:50%;*/
-  margin-bottom: 20px;
-  /*background-color: palegreen;*/
+  margin: 20px 0;
+  background-color: #f2f2f2;
   overflow: hidden;
   perspective: 800px;
   -webkit-perspective: 800px;
@@ -215,9 +250,21 @@ section .tab-pane .btn-primary span{
   background-color: #555;
   /*-webkit-backface-visibility: hidden;*/
 }
-
-
-
+/*优化样式*/
+.photo{
+  left: 50%;
+  top:50%;
+  margin:-160px 0 0 -130px;
+}
+.photo-wrap{
+  -webkit-transform-origin:0% 50% ;
+}
+.photo_front .photo-wrap{
+  -webkit-transform: translate(0px,0px) rotateY(0deg);
+}
+.photo_back .photo-wrap{
+  -webkit-transform: translate(260px,0px) rotateY(180deg);
+}
 
 
 

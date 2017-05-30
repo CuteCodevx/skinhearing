@@ -21,7 +21,7 @@ export class SidenavComponent {
     },
     {
       title:'图文',
-      address:'/about'
+      address:'/about/article0'
     },
     {
       title:'记录',

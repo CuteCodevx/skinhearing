@@ -1,29 +1,76 @@
-
 h1,h2,h3,h4,h5,h6,p,a,li,span{
   font-family: 微软雅黑;
 }
-
 article{
-  background: url('../assets/img/bgimg1.png');
-  background-size: 100%;
+  /*background: url('../assets/img/bgimg1.png');*/
+  /*background-size: 100%;*/
+}
+section{
+  padding: 30px 12%;
+  background-color: #f2f2f2;
+  text-align: center;
 }
 section h1 span{
   color: #8b0000;
 }
-
+.container{
+  padding:20px 73px;
+}
 .row{
-  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
 }
 .thumbnail{
-  border-width:0 0 2px 0;
-  background: rgba(172,238,238,0.8);
-  border-color: #afeeee
-}
-
-.caption h3{
+  width: 238px;
+  height:278px;
+  margin: 0 auto;
   text-align: center;
+  background: #f2f2f2;
+  border: none;
+  position: relative;
+  left:-1500px;
+}
+.container img{
+  margin: 20px auto;
+  /*transform: scale(0.7);*/
+}
+.caption h4{
+  color:#8b0000;
+}
+.caption p{
+  margin-top: 0;
+}
+.caption a{
+  font-size: 14px;
   color:#373e40;
 }
-.caption p a{
-  color: #373e40;
+aside{
+  position: relative;
+  padding: 20px 12%;
+  top:-20px;
+  opacity: 0;
 }
+aside ul{
+  width: 15%;
+  position: absolute;
+  left: 12%;
+}
+aside .btnwrap{
+  position: absolute;
+  right: 12%;
+  top:0px;
+}
+aside button{
+  width: 110px;
+  height:40px;
+  border: 1px solid pink;
+  background-color: rgba(0,0,0,0);
+  color:#0f0f0f;
+  margin-left: 5px;
+
+}
+aside button:hover{
+  box-shadow: 0 0 3px deeppink inset;
+}
+

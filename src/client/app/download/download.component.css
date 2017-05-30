@@ -1,18 +1,51 @@
 h1,h2,h3,h4,h5,h6,p,a,li,span{
   font-family: 微软雅黑;
 }
-
 section{
-  background: url('../assets/img/bannerimg1.png');
-  background-size:100% ;
+  padding: 30px 12%;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+section h1 span{
+  color: #8b0000;
 }
 a{
   text-decoration: none;
   cursor: pointer;
 }
-section h1 span,.row a{
+article{
+  padding: 30px 12%;
+  background-color: #FFFAFA;
+  display: flex;
+  justify-content: space-around;
+}
+article div{
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  width: 240px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  left: -1000px;
+}
+h4{
+  margin: 0px;
+}
+h3{
   color: #8b0000;
 }
-.row{
-  margin: 10px 0;
+a{
+  display: inline-block;
+  width: 90px;
+  height:30px;
+  line-height: 30px;
+  border: 1px solid pink;
+  box-shadow: 0 0 5px deeppink inset;
+  color: #373e40;
+  font-size: 14px;
+}
+a:hover{
+  border: 1px solid blue;
+  box-shadow: 0 0 5px darkblue inset;
 }

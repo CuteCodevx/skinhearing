@@ -6,65 +6,38 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
-section{
-  background: url('../assets/img/contact/bgimg3.jpg');
-  background-size:100% ;
+section {
+  padding: 30px 12%;
+  background-color: #f2f2f2;
+  text-align: center;
 }
+
 section h1 span{
   color: #8b0000;
 }
 .imgbg {
-  background: #fff;
-  height:900px;
-  margin: 1% 0;
-  padding: 1% 0;
-  box-shadow: 0 0 10px 10px #fff;
   position: relative;
-  background: url("../assets/img/contact/map.jpg") no-repeat;
+  background-color: #fff;
 }
-/*.imgbg img{*/
-  /*margin: 0 auto;*/
-/*}*/
+.imgbg img{
+  width: 70%;
+  margin: 0 15%;
+}
+
 .imgbg i{
   position: absolute;
   font-size: 20px;
-  left:745px;
+  left:58%;
   top:50%;
   color: #FFEC8B;
   cursor: pointer;
   display: inline;
 }
-.row{
-  margin: 10px 0;
-}
-.row a{
-  color:#8b0000 ;
-}
-.row h3,.row p span{
-  color: #373e40;
-}
-.row p{
-  color:#373e40;
-}
-.imgstyle{
-  display: inline-block;
-  width:55px;
-  height:55px;
-  background:url("../assets/img/contact/icon-people.png");
-  transition: .5s;
-}
-.imgstyle:hover{
-  transform: scale(1.1);
-}
-.imgstyleC{
-  display: inline-block;
-  width:55px;
-  height:55px;
-  background:url("../assets/img/contact/icon-phone.png");
-}
-
-.panelstyle{
+.imgbg .textwrap{
   position: absolute;
-
-  z-index: 5;
+  left:50%;
+  top:10%;
+  margin-left: -125px;
+  text-align: center;
+  color: #333;
 }

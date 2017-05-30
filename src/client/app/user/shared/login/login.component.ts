@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit{
   fields:FieldBase<any>[]=[];
   registered=false;
   returnUrl:string='';
-  alert:any={msg:'登录成功',type:'success',closable:true};
+  alert:any={msg:'登录成功',type:'success',closable:true,src:'success.png'};
   constructor(private us:UserService,
               private router:Router,
               private activeRoute: ActivatedRoute,
@@ -35,21 +35,8 @@ export class LoginComponent implements OnInit{
   }
   ngOnInit(){
     this.form=this.ls.toFormGroup(this.fields);
+    document.querySelector('section').style.height=document.documentElement.clientHeight+'px';
   }
-  /*login(){
-   this.ls.login(this.form.value).subscribe((res:Response)=>{
-   let body=res.json();
-   if(body && body.success){
-   this.us.isLogin=true;
-   this.us.userInfo={username:this.form.value.username,createDate:new Date().toLocaleDateString()};
-   this.route.navigateByUrl(this.returnUrl ? this.returnUrl:'/');
-   }else{
-   this.alert.msg=body.message;
-   }
-   },error=>{
-   console.log(error);
-   });
-   }*/
   login(){
     this.ls.login(this.form.value).subscribe((res:Response)=>{
       let body=res.json();
@@ -57,6 +44,7 @@ export class LoginComponent implements OnInit{
       new Observable((observer:Observer<any>)=>{
         this.alert.msg= body.message || '您已成功登录';
         this.alert.type=body.success ? "success" : "danger";
+        this.alert.src=body.success ? "success.png" : "fail.png";
         this.registered=true;
         observer.next(true);
       }).subscribe(data => {  //操作提示，1.5秒后跳转到首页 有.subscribe()函数，bosy.seccess,this.alert.type,this.alert.mag值正确，没有的话会出错(注册过的用户名还会注册成功)

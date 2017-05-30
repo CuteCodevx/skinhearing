@@ -1,115 +1,37 @@
 <sd-navbar></sd-navbar>
-<article>
-<section class="container">
-  <div class="row">
-    <div class="col-sm-5">
-      <h1>资料中心 <span>data</span></h1>
-      <h3>实时了解有关皮肤听声器的新进展</h3>
-    </div>
-    <div class="col-sm-2 col-sm-offset-3">
-      <img src="../assets/img/about/paper1.png" alt="" class="img-responsive">
-    </div>
-    <div class="col-sm-2">
-      <img src="../assets/img/about/paper3.png" alt="" class="img-responsive">
-    </div>
-  </div>
 
-  <div class="row" >
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>背景</h3>
-        </div>
-        <a [routerLink]="['/about/article1']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><img src="../assets/img/about/ear.png" alt="..."></a>
-        <div class="caption">
-          <p><a [routerLink]="['/about/article1']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">聋人听声问题一直是世界性的难题。目前解决聋人问题的主要方法是助听器（第一类）和电子耳蜗（第二类）。由于助听器仍然要利用聋人的残余听力...</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>语音频谱图与语音辨析 </h3>
-        </div>
-        <a [routerLink]="['/about/article2']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><img src="../assets/img/about/滤波图.JPG" alt="..."></a>
-        <div class="caption">
-          <p>
-            <a [routerLink]="['/about/article2']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">皮肤听声技术与声学、数学关系极为密切。我们不但需要弄清楚语音的频率范围，还通过语音频谱分析可以获得多通道阵列式皮肤听声技术辨析语音的原理...</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>皮肤构造与皮肤听声的关系  </h3>
-        </div>
-        <a [routerLink]="['/about/article3']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><img src="../assets/img/about/earskin.png" alt="..."></a>
-        <div class="caption">
-          <p><a [routerLink]="['/about/article3']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">人体皮肤可分为表皮、真皮和皮下组织三部分。其中表皮（epidermis）的厚度约0.1mm（与具体的位置、年龄、性别有关），包括角质层、颗粒层...</a></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <div class="row">
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>第一代皮肤听声器的诞生</h3>
-        </div>
-        <a [routerLink]="['/about/article4']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><img src="../assets/img/about/skin_hearing_aid.png" alt="..."></a>
-        <div class="caption">
-          <p><a [routerLink]="['/about/article4']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">第一代皮肤听声器以发明专利“变压式皮肤听声器”为技术基础。第一代皮肤听声器的听觉效果大致可以归结如下：⑴几乎对于所有的声音都非常敏感...</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>高性能皮肤听声器（第二代） </h3>
-        </div>
-        <a [routerLink]="['/about/article5']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><img src="../assets/img/about/高性能皮肤听声器1.png" alt="..."></a>
-        <div class="caption">
-          <p><a [routerLink]="['/about/article5']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">第二代皮肤听声器主要使用多通道带通滤波与阵列电极技术。这种技术涉及的内容包括：确定语音频率区间，设计与制作带通滤波电路，确定通道数...</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>参考文献查阅</h3>
-        </div>
-        <a [routerLink]="['/about/article6']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><img src="../assets/img/about/book.png" alt="..."></a>
-        <div class="caption">
-          <p><a [routerLink]="['/about/article6']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">我们所研究的多通道阵列式皮肤听声技术由以下资料查阅如：[1] 张朝佑主编.人体解剖学（第3版）[M]，北京：人民卫生出版社，2009.3:1136...</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+<section>
+  <h1>资料中心 <span>data</span></h1>
+  <h4>实时了解有关皮肤听声器的新进展</h4>
 </section>
-  <router-outlet></router-outlet>
+<article class="container">
+  <div class="row" >
+    <div class="thumbnail" *ngFor="let eg of thumbnails" (mouseenter)="mouseenter(eg)" (mouseleave)="mouseover(eg)">
+      <img [src]="'../assets/img/about/'+eg.imgsrc" alt="..." class="img" >
+      <div class="caption">
+        <h4>{{eg.title}}</h4>
+       <p><a [routerLink]="['/about/article'+eg.url]" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">{{eg.text}}</a></p>
+      </div>
+    </div>
+  </div>
 </article>
-<!--<div class="row pull-right">-->
-  <!--<nav aria-label="Page navigation">-->
-    <!--<ul class="pagination">-->
-      <!--<li class="disabled">-->
-        <!--<a href="#" aria-label="Previous">-->
-          <!--<span aria-hidden="true">&laquo;</span>-->
-        <!--</a>-->
-      <!--</li>-->
-      <!--<li class="active"><a href="about-article1.html">1</a></li>-->
-      <!--<li><a href="about-article2.html">2</a></li>-->
-      <!--<li><a href="about-article3.html">3</a></li>-->
-      <!--<li><a href="about-article4.html">4</a></li>-->
-      <!--<li><a href="about-article5.html">5</a></li>-->
-      <!--<li><a href="about-article6.html">6</a></li>-->
-      <!--<li>-->
-        <!--<a href="about-article2.html" aria-label="Next">-->
-          <!--<span aria-hidden="true">&raquo;</span>-->
-        <!--</a>-->
-      <!--</li>-->
-    <!--</ul>-->
-  <!--</nav>-->
-<!--</div>-->
+
+<aside>
+  <div class="btnwrap"><button (click)="textchangebig()">增大字体+</button><button (click)="textchangesmall()">减小字体-</button></div>
+    <ul class="nav nav-pills nav-stacked">
+      <li> <a [routerLink]="['/about/article0']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">皮肤听声简介</a></li>
+       <!--<li><a [routerLink]="['/about/article1']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">背景</a></li>-->
+      <li><a [routerLink]="['/about/article2']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">语音分析</a></li>
+          <li><a [routerLink]="['/about/article3']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">皮肤构造与皮肤听声</a></li>
+          <li><a [routerLink]="['/about/article4']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">第一代皮肤听声器</a></li>
+         <li> <a [routerLink]="['/about/article5']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">第二代皮肤听声器</a></li>
+        <li><a [routerLink]="['/about/article6']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">参考文献</a></li>
+    </ul>
+
+  <router-outlet></router-outlet>
+
+</aside>
+
+
+
 <sd-footer></sd-footer>

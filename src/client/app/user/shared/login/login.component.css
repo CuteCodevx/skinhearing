@@ -1,10 +1,29 @@
 h1,h2,h3,h4,h5,h6,p,a,li,span{
   font-family: 微软雅黑;
 }
-
+section{
+  background: url('../assets/img/200013985.jpg');
+  background-size:100% ;
+  padding: 90px;
+}
 .loginstyle{
   text-align: center;
-  background: url('../assets/img/bglogin.jpg');
-  background-size: 100%;
-  border-radius: 10px;
+  /*background: url('../assets/img/bglogin.jpg');*/
+  /*background-size: 100%;*/
+  /*border-radius: 10px;*/
+}
+button{
+  margin: 20px;
+}
+a{
+  color: #373e40;
+  font-size: 12px;
+  /*margin:0px 30px 0 0;*/
+}
+alert img{
+  width: 300px;
+  margin: 0 auto;
+}
+alert{
+  text-align: center;
 }

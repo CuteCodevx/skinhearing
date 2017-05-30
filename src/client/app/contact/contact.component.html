@@ -1,49 +1,16 @@
 <sd-navbar></sd-navbar>
-<section class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h1>联系我们 <span>contact us</span> </h1>
-      <h4>为您带来新一代生活体验</h4>
-    </div>
-    <div class="col-sm-2 col-md-offset-4">
-      <img src="../assets/img/contact/phone1.png" alt="" class="img-responsive">
-    </div>
-    <div class="col-sm-2">
-      <img src="../assets/img/contact/inventor-1.png" alt="" class="img-responsive">
-    </div>
-  </div>
-  <div class="row">
-    <div *ngIf="btn" class="panel panel-default col-md-offset-4 panelstyle">
-      <div class="panel-body">
-        {{content}}
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <p class="col-sm-1 col-sm-offset-4">
-      <a [routerLink]="['/contact']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}" class="imgstyleC"></a>
-      <a [routerLink]="['/contact']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">联系我们</a>
-    </p>
-    <p class="col-sm-1 col-sm-offset-1">
-      <a class="imgstyle" (click)="click()"></a>
-      <a (click)="click()">加入我们</a>
-    </p>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-5">
-      <h3>陕西科技大学皮肤听声研究所</h3>
-      <p><span>地址：</span>陕西省西安市未央区大学园区</p>
-      <p><span>电话：</span>029-86168971</p>
-      <p><span>QQ：</span>71469223</p>
-    </div>
-
-  </div>
-
-
+<section >
+  <h1>联系我们 <span>contact us</span> </h1>
+  <h4>为您带来新一代生活体验</h4>
 </section>
 <div class="imgbg">
-  <!--<img src="../assets/img/contact/map.jpg" alt="" class="img-responsive">-->
+  <img src="../assets/img/contact/map1.jpg" alt="">
   <i class="glyphicon glyphicon-map-marker"data-toggle="tooltip" data-placement="right" title="地址：陕西省西安市未央区大学园区陕西科技大学实验楼2A-307"></i>
+  <div class="textwrap">
+    <h3>陕西科技大学皮肤听声研究所</h3>
+    <p><span>地址：</span>陕西省西安市未央区大学园区</p>
+    <p><span>电话：</span>029-86168971</p>
+    <p><span>QQ：</span>71469223</p>
+  </div>
 </div>
 <sd-footer></sd-footer>

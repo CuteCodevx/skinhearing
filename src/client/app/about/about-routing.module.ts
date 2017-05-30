@@ -8,12 +8,13 @@ import {Article3Routes} from './article/index';
 import {Article4Routes} from './article/index';
 import {Article5Routes} from './article/index';
 import {Article6Routes} from './article/index';
-
+import {Article0Routes} from './article/index';
 const routes:Routes=[
   {
     path:'about',
     component:AboutComponent,
     children:[
+      ...Article0Routes,
       ...Article1Routes,
       ...Article2Routes,
       ...Article3Routes,

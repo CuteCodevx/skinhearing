@@ -1,23 +1,32 @@
 h1,h2,h3,h4,h5,h6,p,a,li,span{
   font-family: 微软雅黑;
 }
-
+section{
+  background: url('../assets/img/200013983.jpg');
+  background-size: 100%;
+  padding: 90px;
+}
 .loginstyle{
   text-align: center;
-  background: url('../assets/img/bglogin.jpg');
-  background-size: 100%;
-  border-radius: 10px;
 }
 a{
-  color: 	#8A2BE2;
+  color: #373e40;
+  font-size: 12px;
 }
-.input-group-addon{
-  border: none;
-  background: rgba(0,25,0,0);
-}
+
 .form-checkbox{
   margin: 20px 0 10px 0;
 }
 #showPassword{
   height:15px;
+}
+button{
+  margin: 20px;
+}
+alert img{
+  width: 300px;
+  margin: 0 auto;
+}
+alert{
+  text-align: center;
 }

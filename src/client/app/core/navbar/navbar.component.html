@@ -10,32 +10,36 @@
       <a href="#" class="navbar-brand">
         <img src="../../assets/img/logoo.png" alt="Brand" class="img-responsive">
       </a>
-      <p class="navbar-text"><span *ngIf="!isEN">皮肤听声专题网</span><span *ngIf="isEN">Net skin-hearing projects</span></p>
+      <p class="navbar-text">皮肤听声专题网</p>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <nav class="nav navbar-nav">
-        <a [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">首页</span><span *ngIf="isEN">HomePage</span></a>
-        <a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">相关理论</span><span *ngIf="isEN">Some Papers</span></a>
-        <a [routerLink]="['/product']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">产品介绍</span><span *ngIf="isEN">Product</span></a>
-        <a [routerLink]="['/userecord']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">使用记录</span><span *ngIf="isEN">Use Record</span></a>
-        <a [routerLink]="['/download']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">相关下载</span><span *ngIf="isEN">Download</span></a>
-        <a [routerLink]="['/contact']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">联系我们</span><span *ngIf="isEN">Contact Us</span></a>
+        <a [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">首页</a>
+        <a [routerLink]="['/about/article0']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">相关理论</a>
+        <a [routerLink]="['/product']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">产品介绍</a>
+        <a [routerLink]="['/userecord']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">使用记录</a>
+        <a [routerLink]="['/download']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">相关下载</a>
+        <a [routerLink]="['/contact']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">联系我们</a>
       </nav>
       <nav class="nav navbar-nav navbar-right">
-        <a [routerLink]="['/inventor']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">发明者</span><span *ngIf="isEN">Inventor</span></a><i class="glyphicon glyphicon-user"></i>
-        <a *ngIf="!userService.isLogin" [routerLink]="['/register']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">注册</span><span *ngIf="isEN">Register</span></a>
-        <a *ngIf="!userService.isLogin"  [routerLink]="['/login']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}"><span *ngIf="!isEN">登录</span><span *ngIf="isEN">Login</span></a>
+        <a [routerLink]="['/inventor']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">发明者</a><i class="glyphicon glyphicon-user"></i>
+        <a *ngIf="!userService.isLogin" [routerLink]="['/register']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">注册</a>
+        <a *ngIf="!userService.isLogin"  [routerLink]="['/login']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">登录</a>
         <a>{{userService?.userInfo?.username}}</a>
-        <a *ngIf = "userService.isLogin" (click)="logout()" ><span *ngIf="!isEN">注销</span><span *ngIf="isEN">Logout</span></a>
+        <a *ngIf = "userService.isLogin" (click)="logout()" >注销</a>
         <a class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span *ngIf="!isEN">中文</span><span *ngIf="isEN">EN</span><span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">中文<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a (click)="changeLanguage()"><span *ngIf="!isEN">EN</span><span *ngIf="isEN">中文</span></a></li>
+            <li><a>EN</a></li>
             <!--<li><a >繁体</a></li>-->
           </ul>
         </a>
       </nav>
     </div>
   </div>
+  <div class="stars" *ngFor="let sta of star;let i=index" [id]="'star'+i">
+    <img [src]="'../assets/img/'+sta.img" alt="">
+  </div>
 </nav>
+
 <sd-sidenav></sd-sidenav>

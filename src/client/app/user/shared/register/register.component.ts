@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit{
   form:FormGroup;
   registered=false;
   fields:FieldBase<any>[]=[];
-  alert:any={msg:'注册成功',type:'success',closable:true};
+  alert:any={msg:'注册成功',type:'success',closable:true,src:'success.png'};
   username:string;
   password:string;
 
@@ -37,6 +37,7 @@ export class RegisterComponent implements OnInit{
   //组件初始化
   ngOnInit(){
     this.form=this.rs.toFormGroup(this.fields);
+    document.querySelector('section').style.height=document.documentElement.clientHeight+'px';
   }
   showPassword(){
     this.fields.forEach((field:any)=>{
@@ -58,6 +59,7 @@ export class RegisterComponent implements OnInit{
       new Observable((observer:Observer<any>)=>{
         this.alert.msg= body.message || '注册成功';
         this.alert.type=body.success ? "success" : "danger";
+        this.alert.src=body.success ? "success.png" : "fail.png";
         this.registered=true;
         observer.next(true);
       }).subscribe(data => {  //操作提示，1.5秒后跳转到首页 有.subscribe()函数，bosy.seccess,this.alert.type,this.alert.mag值正确，没有的话会出错(注册过的用户名还会注册成功)

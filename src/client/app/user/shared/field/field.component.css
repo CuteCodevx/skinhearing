@@ -17,6 +17,16 @@
 .form-control{
   background: rgba(250,240,230,0.5);
 }
+label{
+  color: #e0e0e0;
+  font-size: 14px;
+  font-weight: 400;
+  /*text-shadow: 0 0 5px rgba(139,0,0,1);*/
+}
+i{
+  color: #e0e0e0;
+}
 p{
   color: rgba(139,0,0,1);
+  font-size: 12px;
 }
