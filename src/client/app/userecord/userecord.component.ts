@@ -12,8 +12,7 @@ import { Component,OnInit } from '@angular/core';
 export class UserecordComponent implements OnInit{
   ngOnInit(){
     let divs=document.querySelectorAll('.imgwraped div');
-    let imgs=document.querySelectorAll('.imgWrap img');
-    let divsarr=[],arr=[];
+    let divsarr[],arr=[];
     for(let i=0;i<divs.length;i++) {
       if (i % 2 == 0) {
         divsarr.push(divs[i]);

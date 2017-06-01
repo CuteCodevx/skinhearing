@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'article4',
   templateUrl: 'article4.component.html',
-  styleUrls: ['article2.component.css','article4.component.css']
+  styleUrls: ['article2.component.css']
 })
 export class Article4Component { }

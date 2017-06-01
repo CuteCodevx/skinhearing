@@ -23,7 +23,7 @@ section h1 span{
 }
 .thumbnail{
   width: 238px;
-  height:278px;
+  /*height:278px;*/
   margin: 0 auto;
   text-align: center;
   background: #f2f2f2;

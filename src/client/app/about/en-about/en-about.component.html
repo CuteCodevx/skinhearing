@@ -1,0 +1,36 @@
+<en-navbar></en-navbar>
+
+<section>
+  <h1>Data</h1>
+  <h4>Learn new developments about skin listening devices in real time</h4>
+</section>
+<article class="container">
+  <div class="row" >
+    <div class="thumbnail" *ngFor="let eg of thumbnails" (mouseenter)="mouseenter(eg)" (mouseleave)="mouseover(eg)">
+      <img [src]="'../assets/img/about/'+eg.imgsrc" alt="..." class="img" >
+      <div class="caption">
+        <h4>{{eg.title}}</h4>
+        <p><a [routerLink]="['/en/about/article'+eg.url]" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">{{eg.text}}</a></p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<aside>
+  <div class="btnwrap"><button (click)="textchangebig()">increase+</button><button (click)="textchangesmall()">decrease-</button></div>
+  <ul class="nav nav-pills nav-stacked">
+    <li> <a [routerLink]="['/en/about/article0']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Introduction</a></li>
+    <li><a [routerLink]="['/en/about/article2']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Voice analysis</a></li>
+    <li><a [routerLink]="['/en/about/article3']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Sound of the skin</a></li>
+    <li><a [routerLink]="['/en/about/article4']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">First generation</a></li>
+    <li> <a [routerLink]="['/en/about/article5']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Second generation</a></li>
+    <li><a [routerLink]="['/en/about/article6']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Reference</a></li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
+</aside>
+
+
+
+<en-footer></en-footer>

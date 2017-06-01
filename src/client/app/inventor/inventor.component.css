@@ -316,7 +316,7 @@ aside{
 
 .text,.texticon{
   width: 150px;
-  height: 230px;
+  /*height: 230px;*/
   padding: 5px;
   margin:0 5px;
   box-sizing: border-box;

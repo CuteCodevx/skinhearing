@@ -71,6 +71,7 @@ section{
   margin:0 auto;
 }
 .oldpeople .textwrap{
+  width: 40%;
   position: absolute;
   left:13%;
   top:20%;

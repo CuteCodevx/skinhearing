@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">
+        <img src="../../assets/img/logoo.png" alt="Brand" class="img-responsive">
+      </a>
+      <div class="navbar-text"><p>Internet of</p><p>Skinhearing</p></div>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav class="nav navbar-nav">
+        <a [routerLink]="['/en']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        <a [routerLink]="['/en/about/article0']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Knowledge</a>
+        <a [routerLink]="['/en/product']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Product</a>
+        <a [routerLink]="['/en/userecord']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">History</a>
+        <a [routerLink]="['/en/download']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Download</a>
+        <a [routerLink]="['/en/contact']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Contact Us</a>
+      </nav>
+      <nav class="nav navbar-nav navbar-right">
+        <a [routerLink]="['/en/inventor']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Inventor</a><i class="glyphicon glyphicon-user"></i>
+        <a *ngIf="!userService.isLogin" [routerLink]="['/en/register']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Login</a>
+        <a *ngIf="!userService.isLogin"  [routerLink]="['/en/login']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Sign In</a>
+        <a>{{userService?.userInfo?.username}}</a>
+        <a *ngIf = "userService.isLogin" (click)="logout()" >Logout</a>
+        <a class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">中文</a></li>
+            <!--<li><a >繁体</a></li>-->
+          </ul>
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div class="stars" *ngFor="let sta of star;let i=index" [id]="'star'+i">
+    <img [src]="'../assets/img/'+sta.img" alt="">
+  </div>
+</nav>
+
+<sd-sidenav></sd-sidenav>

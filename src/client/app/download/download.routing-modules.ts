@@ -16,7 +16,7 @@ const routes:Routes=[
       ...DocRoutes,
       ...PageimgRoutes
     ],
-    // canActivate:[AuthGuard]
+    canActivate:[AuthGuard]
   }
 ]
 

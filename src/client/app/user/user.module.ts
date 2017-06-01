@@ -14,9 +14,12 @@ import {LoginComponent} from './shared/index';
 import {FieldComponent} from './shared/index';
 import {AlertModule} from 'ngx-bootstrap/alert';
 
+import {EnRegisterComponent} from './shared/register/en-register/en-register.component';
+import {EnLoginComponent} from './shared/login/en-login/en-login.component';
+
 @NgModule({
   imports: [CommonModule, UserRoutingModule,CoreModule,ReactiveFormsModule,AlertModule.forRoot()],
-  declarations: [RegisterComponent,LoginComponent,FieldComponent],
-  exports: [RegisterComponent,LoginComponent,FieldComponent]
+  declarations: [EnRegisterComponent,RegisterComponent,EnLoginComponent,LoginComponent,FieldComponent],
+  exports: [RegisterComponent,LoginComponent,FieldComponent,EnLoginComponent,EnRegisterComponent]
 })
 export class UserModule { }

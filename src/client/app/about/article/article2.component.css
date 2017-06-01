@@ -29,3 +29,7 @@ ul{
 .paragraph img{
   margin: 0 auto;
 }
+td{
+  text-align: center;
+  padding: 5px;
+}

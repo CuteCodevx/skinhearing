@@ -35,9 +35,10 @@ section h1 span{
 }
 .imgbg .textwrap{
   position: absolute;
-  left:50%;
-  top:10%;
+  left:40%;
+  top:8%;
   margin-left: -125px;
   text-align: center;
   color: #333;
+  width: 40%;
 }

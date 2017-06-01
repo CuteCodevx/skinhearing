@@ -17,12 +17,6 @@ export class HomeComponent implements OnInit {
     return this.btn;
   }
 
-  // slides:Array<any> = [];
-  // slogan:Array<string> = [
-  //   '免费简约的问卷系统',
-  //   '简单 好用，在线调查网站',
-  //   '多方式创建编辑问卷'
-  // ];
   data:Array<object>=[
     {
       img:'1.jpg',
@@ -105,7 +99,6 @@ export class HomeComponent implements OnInit {
       desc:'2013年3月26日下午约2:30驱车到达咸阳市特殊教育学校，同行的人有李建文教授与三个研究生李沙沙、李岩、张铭，咸阳市特殊教育学校由副校长韩学军和教师闫润英接待。聋哑学生王雪使用皮肤听声器学习说话，当她能够听清别人说话，自己也会简单发音了时，她喜欢上了弹琴，她可以听见美妙的乐曲'
     }
   ];
-  // html:Array<any>=[];
   constructor(){}
   ngOnInit() {
     this.iconstyle='photo photo_front';
@@ -115,7 +108,6 @@ export class HomeComponent implements OnInit {
     let boxstyle=document.getElementById('boxstyle');
     document.onmousewheel=function () {
       if(document.body.scrollTop>1200){
-        console.log(1);
         boxstyle.style.top=0+'px';
         boxstyle.style.transition='1s';
       }
@@ -153,15 +145,14 @@ export class HomeComponent implements OnInit {
       // halfimgW:Math.ceil(photo.w/2),
       // halfimgH:Math.ceil(photo.h/2)
     };
-    // console.log(range.left)
     // range.left.x=[0-photo.w,wrap.w/2-photo.w/2];
     // range.left.y=[0-photo.h,wrap.h]
     //
-    range.right.x=[wrap.w/2+photo.w/2,wrap.w+photo.w];
+    // range.right.x=[wrap.w/2+photo.w/2,wrap.w+photo.w];
     // range.right.y=range.left.y;
     range.left.x=[0-photo.w/2,wrap.w/2-(photo.w/2)];
     range.left.y=[0-photo.h/2,wrap.h-photo.h/2];
-    // range.right.x=[wrap.w/2+photo.w/2,wrap.w-photo.w/2];
+    range.right.x=[wrap.w/2+photo.w/2,wrap.w-photo.w/2];
     range.right.y=range.left.y;
     return range;
   }

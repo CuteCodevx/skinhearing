@@ -1,0 +1,101 @@
+<en-navbar></en-navbar>
+<section>
+  <div class="container-fluid">
+    <span>High-performance，</span>
+    <h1>Skin-Hearing，In Here。</h1>
+    <a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">more detail > </a>
+    <img src="../assets/img/f452eae89d5254abc37b40b03461d4c4.png" alt="" class="img-responsive">
+  </div>
+  <div class="divide">
+    <div class="container-fluid left">
+      <span>First，</span>
+      <h1>Skin-Hearing。</h1>
+      <p>High-performance skin-hearing collected human anatomy, acoustics, mathematics, electronics and other cutting-edge science and technology, make full use of the sensory nerves of human body skin resources, opening up new auditory channel on human arm skin, can be used as the preferred tool of hearing of the deaf.</p>
+      <a [routerLink]="['/about/article4']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">more detail > </a>
+      <img src="../assets/img/about/skin_hearing_aid.png" alt="...">
+    </div>
+    <div class="container-fluid right">
+      <span>Second，</span>
+      <h1>Skin-Hearing。</h1>
+      <p>In October 2013, the second generation of skin listening devices, called high-performance skin listening devices, was developed. Features: the arm type, 12 channel filtering, array electrode, automatic volume adjustment, fitting sensation curve. The high-performance skin listening device enables deaf people to recognize speech. </p>
+      <a [routerLink]="['/about/article5']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">more detail > </a>
+      <img src="../assets/img/about/高性能皮肤听声器.png" alt="...">
+    </div>
+  </div>
+
+  <div class="container-fluid style" id="boxstyle">
+    <img src="../assets/img/about/ear.png" alt="..." class="img-responsive">
+    <h1>Personality, Powerful And Fun</h1>
+    <p>The scientific crystallization of multidisciplinary science, the ultimate solution to the problem of the deaf, is like an electronic cochlear implant, which is just as convenient as a hearing aid. </p>
+    <h4>Show Pictures ↓↓ </h4>
+  </div>
+  <div class="wrap" id="wrap">
+    <div [class]="iconstyle" [id]="i" (click)="turn(i)" *ngFor="let _html of data;let i =index">
+      <div class="photo-wrap">
+        <div class="side side-front">
+          <p class="image">
+            <img [src]=" '../assets/img/'+_html.img" alt="">
+          </p>
+          <p class="caption">{{_html.title}}</p>
+        </div>
+        <div class="side side-back">
+          <p class="desc">{{_html.desc}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <span [id]="'nav'+k" (click)="turn(k)" class="i" *ngFor="let _html of data;let k =index">&nbsp;</span>
+    </div>
+  </div>
+  <div class="oldpeople">
+    <img src="../assets/img/467588.jpg" alt="" class="img-responsive">
+    <div class="textwrap">
+      <h2>Skin listening device, Adolescent Application </h2>
+      <p>There are a variety of possibilities that make your lifestyle different. </p>
+      <a href="">more detail > </a>
+    </div>
+  </div>
+  <div class="oldpeople">
+    <img src="../assets/img/128678.jpg" alt="" class="img-responsive">
+    <div class="textwrap">
+      <h2>Skin listening device, Oldpeople Application </h2>
+      <p>Before the normal hearing loss begins to use, enjoy the happiness of the old age. </p>
+      <a href="">more detail > </a>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <!---->
+    <span>Questions </span>
+    <h4>We offer help in time。</h4>
+    <div class="pull-left textwrapleft">
+      <img src="../assets/img/quiz.png" alt="" class="img-responsive">
+      <h3>What is the right performance for high-performance skin listening devices? </h3>
+      <p>We're always happy to welcome new users, and the following links will help you start using high-performance skin listening devices. </p>
+      <a (click)="click()">detail > </a>
+    </div>
+    <div class="pull-right textwrapright">
+      <img src="../assets/img/quiz.png" alt="" class="img-responsive">
+      <h3>What are its features and advantages compared to traditional hearing AIDS? </h3>
+      <p>Let's help you understand the skin sound organ and show you that it provides some powerful functionality.</p>
+      <a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">Learn about high-performance Skin-Hearing > </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div *ngIf="btn" class="panel panel-default col-md-offset-4 panelstyle">
+        <div class="panel-body">
+          {{content}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <router-outlet></router-outlet>
+</section>
+<en-footer></en-footer>
+

@@ -13,14 +13,14 @@ import { SidenavComponent } from './sidenav/index';
 import {RegisterService} from './services/register.service';
 import {UserService} from './services/user.service';
 import {LoginService} from './services/login.service';
-
-
+import {EnNavbarComponent} from './navbar/en-navbar/en-navbar.component';
+import {EnFooterComponent} from './footer/en-footer/en-footer.component';
 @NgModule({
   imports: [CommonModule, RouterModule],
   providers:[RegisterService,UserService,LoginService],
-  declarations: [ NavbarComponent,FooterComponent,SidenavComponent],
+  declarations: [ NavbarComponent,FooterComponent,SidenavComponent,EnNavbarComponent,EnFooterComponent],
   exports: [ NavbarComponent,FooterComponent,SidenavComponent,
-    CommonModule, FormsModule, RouterModule]
+    CommonModule, FormsModule, RouterModule,EnNavbarComponent,EnFooterComponent]
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule:CoreModule){
